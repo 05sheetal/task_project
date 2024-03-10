@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Document</title>
+      <style>
+        button
+        {
+            width: 40px;
+        }
+        input
+        {
+            text-align: right;
+        }
+      </style>
+</head>
+<body>
+    <table>
+        <tr>
+          <td colspan="4"><input type="text" readonly id="display" placeholder="0"></td>
+         </tr>
+        <tr>
+            <td><button onclick="
+                curvalue=''
+                document.getElementById('display').value=curvalue;">AC</button></td>
+            <td><button>()</button></td>
+            <td><button onclick="
+                curvalue=curvalue+'%'
+                document.getElementById('display').value=curvalue;">%</button></td>
+            <td><button onclick="
+                curvalue=curvalue+'/'
+                document.getElementById('display').value=curvalue;">/</button></td>
+         </tr>
+          <tr>
+            <td><button onclick="
+                curvalue=curvalue+'7'
+                document.getElementById('display').value=curvalue;">7</button></td>
+            <td><button onclick="
+                curvalue=curvalue+'8'
+                document.getElementById('display').value=curvalue;">8</button></td>
+             <td><button onclick="
+                curvalue=curvalue+'9'
+                document.getElementById('display').value=curvalue;">9</button></td>
+              <td><button onclick="
+                curvalue=curvalue+'*'
+                document.getElementById('display').value=curvalue;">X</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="
+                curvalue=curvalue+'4'
+                document.getElementById('display').value=curvalue;">4</button></td>
+             <td><button onclick="
+                curvalue=curvalue+'5'
+                document.getElementById('display').value=curvalue;">5</button></td>
+            <td><button onclick="
+                curvalue=curvalue+'6'
+                document.getElementById('display').value=curvalue;">6</button></td>
+            <td><button onclick="
+                curvalue=curvalue+'-'
+                document.getElementById('display').value=curvalue;">-</button></td>
+         </tr>
+         <tr>
+            <td><button onclick="
+                curvalue=curvalue+'1'
+                document.getElementById('display').value=curvalue;">1</button></td>
+            <td><button onclick="
+                curvalue=curvalue+'2'
+                document.getElementById('display').value=curvalue;">2</button></td>
+            <td><button onclick="
+                curvalue=curvalue+'3'
+                document.getElementById('display').value=curvalue;">3</button></td>
+            <td><button onclick="
+                curvalue=curvalue+'+'
+                document.getElementById('display').value=curvalue;">+</button></td>
+         </tr>
+         <tr>
+            <td><button onclick="
+                curvalue=curvalue+'0'
+                document.getElementById('display').value=curvalue;">0</button></td>
+             <td><button onclick="
+                curvalue=curvalue+'.'
+                document.getElementById('display').value=curvalue;">.</button></td>
+           <td><button onclick="
+           curvalue= curvalue.substr(0, curvalue.length - 1)
+            document.getElementById('display').value=curvalue">back</button></td>
+            <td><button onclick="
+                curvalue=eval(curvalue)
+                document.getElementById('display').value=curvalue;">=</button></td>
+         </tr>
+    </table> 
+    <script>
+         var curvalue=''
+        document.getElementById("display").value=curvalue;
+    </script>
+</body>
+</html>
